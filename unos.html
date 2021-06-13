@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>BZ Berlin</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="nav-container">
+      <div id="redline"></div>
+      <nav id="navigation-bar" class="navbar nabvar-fixed-top">
+        <div id="navbarInner" class="nabvar-inner">
+          <img src="resources/images/logo.png" />
+        </div>
+        <div class="nav-list">
+          <ul id="menu-logo-menue" class="menu">
+            <li id="menu-item" class="menu-item menu-item-object-category">
+              <a href="index.html">Home</a>
+            </li>
+            <li id="menu-item" class="menu-item menu-item-object-category">
+              <a>Berlin-Sport</a>
+            </li>
+            <li id="menu-item" class="menu-item menu-item-object-category">
+              <a>Kultur and Show</a>
+            </li>
+            <li id="menu-item" class="menu-item menu-item-object-category">
+              <a href="unos.html">Administracija</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section>
+      <section id="sectionBody">
+        <article id="fullPageArticle">
+          <div id="formContainer">
+            <form name="newArticle" action="scripts/skripta.php" method="POST">
+              <div class="form-item">
+                <label for="title">Naslov vijesti</label>
+                <div class="form-field">
+                  <input type="text" name="title" class="form-field-textual" />
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="about">Kratki sadržaj vijesti(do 50 znakova)</label>
+                <div class="form-field">
+                  <textarea
+                    name="about"
+                    id=""
+                    cols="100"
+                    rows="10"
+                    class="form-field-textual"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="content">Sadržaj vijesti</label>
+                <div class="form-field">
+                  <textarea
+                    name="content"
+                    id=""
+                    cols="100"
+                    rows="20"
+                    class="form-field-textual"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="pphoto">Slika: </label>
+                <div class="form-field">
+                  <input
+                    type="file"
+                    accept="image/jpg,image/gif"
+                    class="input-text"
+                    name="pphoto"
+                  />
+                </div>
+              </div>
+              <div class="form-item">
+                <label for="category">Kategorija vijesti</label>
+                <div class="form-field">
+                  <select name="category" id="" class="form-field-textual">
+                    <option value="sport">Sport</option>
+                    <option value="kultura">Kultura</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-item">
+                <label
+                  >Spremiti u arhivu:
+                  <div class="form-field">
+                    <input type="checkbox" name="archive" />
+                  </div>
+                </label>
+              </div>
+              <div class="form-item">
+                <button type="reset" value="Poništi">Poništi</button>
+                <button type="submit" value="Prihvati">Prihvati</button>
+              </div>
+            </form>
+          </div>
+        </article>
+      </section>
+    </section>
+    <footer>
+      <div id="footerDiv">
+        <p>Weitere Online-Angebote der Axel Springer SE</p>
+      </div>
+    </footer>
+  </body>
+</html>
